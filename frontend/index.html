@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SupportMate | Your Daily Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>SupportMate</h1>
+    <p>Find trusted helpers on an hourly basis.</p>
+  </header>
+
+  <section id="services">
+    <h2>Available Support</h2>
+    <ul>
+      <li>🏥 Hospital Support</li>
+      <li>🎓 Exam Center Assistance</li>
+      <li>🧳 Travel Companion</li>
+      <li>👴 Elderly Support</li>
+    </ul>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Helper</h2>
+    <form id="bookingForm" enctype="multipart/form-data">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Preferred Helper Gender:</label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male" required> Male</label>
+        <label><input type="radio" name="gender" value="Female" required> Female</label>
+        <label><input type="radio" name="gender" value="ANY" required> Any</label>
+      </div>
+
+      <label for="service">Select Service:</label>
+      <select id="service" required>
+        <option value="">-- Choose a service --</option>
+        <option>Hospital Support</option>
+        <option>Exam Assistance</option>
+        <option>Travel Companion</option>
+        <option>Elderly Support</option>
+      </select>
+
+      <label for="hours">Hours Needed:</label>
+      <input type="number" id="hours" min="1" max="12" required>
+
+      <label for="aadhaar">Upload Aadhaar:</label>
+      <input type="file" id="aadhaar" accept=".jpg,.jpeg,.png,.pdf" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <p id="confirmation"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p>© 2025 SupportMate</p>
+</footer>
+
+</html>
